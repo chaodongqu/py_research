@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+
+监控价格变化， 如果到达指定位置，立即aralm
+
+执行方法：
+启动 Anaconda Prompt
+让后在环境中执行  python d:\Learning\py_research\alarm.py
 """
 
 import re
