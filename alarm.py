@@ -73,6 +73,8 @@ def monitor_stock( stock_condition):
 ######   code,percent,>,1.0
 monitors=[]
 monitors.append(('600050','price','>' ,5.0 ) )
-for x in monitors:
-    print (x)    
-    monitor_stock(x)
+
+while(1):
+    for x in monitors:
+        print (x)    
+        monitor_stock(x)
