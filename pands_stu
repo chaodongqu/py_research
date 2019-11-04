@@ -1,0 +1,9 @@
+1 . df.head df.tail 分别查看头尾数据
+2. df.index df.values df.columns df.describe
+3.df.sort_values(by='B')  df.sort_index(axis=1, ascending=False)
+
+数据选择
+1 . df['A'] -- 单个列数据
+2.
+df[0:3] 0 - 3 行数据
+df.loc[dates[0]]  df.loc[:,['A','B']] ,也就是说， loc代表是行列
