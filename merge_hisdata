@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan  1 21:53:18 2020
+
+@author: quchaodong
+
+merge multipy hist data  to a single data file
+
+
+"""
+import pandas as pd 
+
+def getFileData( fileName):    
+    data = pd.read_excel(fileName )
+    return data;
+
+fileNames = [
+'/Users/quchaodong/stu/tmp/his03.xls',
+'/Users/quchaodong/stu/tmp/his04.xls',
+'/Users/quchaodong/stu/tmp/his05.xls',
+'/Users/quchaodong/stu/tmp/his06.xls',
+'/Users/quchaodong/stu/tmp/his07.xls',
+'/Users/quchaodong/stu/tmp/his08.xls',
+'/Users/quchaodong/stu/tmp/his09.xls',
+'/Users/quchaodong/stu/tmp/his10.xls',
+'/Users/quchaodong/stu/tmp/20191230.xls',
+        ];
+
+allData =  getFileData('/Users/quchaodong/stu/tmp/his02.xls');      
+for f in fileNames:
+    dt = getFileData( f )        
+    allData = allData.append(dt)
+
+allData.to_excel( excel_writer ='/Users/quchaodong/stu/tmp/ook.xls'
+                 )    
