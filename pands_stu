@@ -6,6 +6,8 @@
 1 . df['A'] -- 单个列数据
 2.
 df[0:3] 0 - 3 行数据
+
+按照标签选择数据（lable）
 df.loc[dates[0]]  df.loc[:,['A','B']] ,也就是说， loc代表是行列
 
 还有一个iloc ，使用区别是其全部用 序号。 loc代表是lable。
@@ -15,3 +17,10 @@ df.loc[dates[0]]  df.loc[:,['A','B']] ,也就是说， loc代表是行列
 重新设置INDEX  set_index()
 
 在索引区间 截取 x[(x.index >'2019-9-21') &( x.index <'2019-10-21') ]
+按照行选取
+df.iloc[3]
+df.iloc[3:5,0:2] -- 行列选取范围
+
+
+
+
