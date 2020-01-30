@@ -131,3 +131,7 @@ if __name__=="__main__":
     for dataFile in files:
         test( dataFile , '2019-01-01' , 20)
 '''
+
+'''
+测试结果看， 对对单边下跌不起作用， 但是对盘整和单边上涨都有效。
+'''
