@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jan  1 10:25:16 2020
-
+分析获利情况
 @author: quchaodong
 """
 
@@ -87,7 +87,7 @@ def cacCodeRet( code, codeDetail):
     return ;
 
 fileName='/Users/quchaodong/stu/tmp/20191230.xls'
-fileName='/Users/quchaodong/stu/tmp/data2-12.xls'
+fileName='/Users/quchaodong/stu/py_research/tmp/data2-12.xls'
 data = pd.read_excel(fileName )
 #print(data.head())
 

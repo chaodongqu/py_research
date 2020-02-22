@@ -118,11 +118,14 @@ if __name__=="__main__":
     filepath = '/Users/quchaodong/stu/test_invest_data/edata'
     
     
-    pathDir =  os.listdir(filepath)
-    for allDir in pathDir:
-        fileName = os.path.join('%s/%s' % (filepath, allDir))
-        #print(fileName) # .decode('gbk')是解决中文显示乱码问题
-        code_name = allDir[:-4]
+    path =  os.listdir(filepath)
+    for name in path:        
+        if not name.endswith('.txt') :
+            continue
+        
+        fileName = os.path.join('%s/%s' % (filepath, name))
+        print(fileName) # .decode('gbk')是解决中文显示乱码问题
+        code_name = name[:-4]
         test( fileName , '2019-01-01' , 20)
 '''
     files = ['/Users/quchaodong/stu/py_research/tmp/edata/SZ#000768.txt' ,
